@@ -1,0 +1,7 @@
+# Ignore all files in /share
+# Except /share/config
+share/*
+!share/config
+
+# Ignore DS files
+.DS_Store
