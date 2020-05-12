@@ -5,3 +5,6 @@ share/*
 
 # Ignore DS files
 .DS_Store
+
+# Ignore vagrant files
+.vagrant

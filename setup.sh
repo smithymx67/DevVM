@@ -41,8 +41,9 @@ mv /var/www/html/phpMyAdmin-5.0.2-all-languages/ /var/www/html/phpMyAdmin
 cp /media/share/config/config.inc.php /var/www/html/phpMyAdmin
 mkdir /var/www/html/phpMyAdmin/tmp
 chmod 775 /var/www/html/phpMyAdmin/tmp/
-chown -R root:www-data html/
+chown -R root:www-data /var/www/html
 rm phpMyAdmin-5.0.2-all-languages.zip
+rm /var/www/html/index.html
 
 touch /var/www/html/links.html
 echo '<p><a href="//astroid/phpMyAdmin/"><img src="/phpMyAdmin/favicon.ico" style="vertical-align:middle;padding-right:1em;">phpMyAdmin</a></p>' >> /var/www/html/links.html
