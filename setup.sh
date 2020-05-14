@@ -5,7 +5,7 @@ apt-get install net-tools -y
 apt-get install apache2 -y
 apt-get install curl -y
 apt-get install mariadb-server -y
-apt-get install php libapache2-mod-php php-mysql php-cli php-mbstring php-bz2 php-zip -y
+apt-get install php libapache2-mod-php php-mysql php-cli php-mbstring php-bz2 php-zip php-xdebug php-curl -y
 apt-get install curl git unzip -y
 
 curl -sL https://deb.nodesource.com/setup_12.x | bash -
