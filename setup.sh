@@ -1,11 +1,9 @@
 #!/bin/bash
 
 apt-get update
-apt-get install net-tools -y
+apt-get install net-tools dos2unix curl git unzip -y
 apt-get install apache2 -y
-apt-get install curl -y
 apt-get install php libapache2-mod-php php-mysql php-cli php-mbstring php-bz2 php-zip php-xdebug php-curl php-xml php-dom php-simplexml -y
-apt-get install curl git unzip -y
 apt-get install mariadb-server -y
 
 curl -sL https://deb.nodesource.com/setup_12.x | bash -
