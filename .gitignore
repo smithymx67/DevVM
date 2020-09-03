@@ -1,7 +1,8 @@
 # Ignore all files in /share
 # Except /share/config
 share/*
-!share/wwwLink.sh
+!share/wwwLinkLaravel.sh
+!share/wwwLinkHomeBrewMVC.sh
 !share/config
 
 # Ignore DS files
