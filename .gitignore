@@ -2,6 +2,7 @@
 # Except /share/config
 share/*
 !share/wwwLinkLaravel.sh
+!share/wwwLinkDrupal.sh
 !share/wwwLinkHomeBrewMVC.sh
 !share/config
 
