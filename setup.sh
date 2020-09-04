@@ -53,3 +53,10 @@ chmod 775 /var/www/html/phpMyAdmin/tmp/
 chown -R root:www-data /var/www/html
 rm phpMyAdmin-5.0.2-all-languages.zip
 rm /var/www/html/index.html
+
+fallocate -l 1G /swapfile
+dd if=/dev/zero of=/swapfile bs=1024 count=1048576
+chmod 600 /swapfile
+mkswap /swapfile
+swapon /swapfile
+echo "/swapfile swap swap defaults 0 0" >> /etc/fstab
