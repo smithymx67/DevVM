@@ -12,7 +12,7 @@ apt-get install -y nodejs
 curl -sS https://getcomposer.org/installer -o composer-setup.php
 php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 
-openssl req -newkey rsa:2048 -nodes -days 3650 -x509 -subj "/E=sam@astroid/C=GB/S=Oxfordshire/L=Hook Norton/O=Dev/CN=astroid" -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt
+openssl req -newkey rsa:2048 -nodes -days 3650 -x509 -subj "/E=root@astroid/C=GB/S=Rootshire/L=Rootvile/O=Dev/CN=astroid" -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt
 
 sed -i 's/ssl-cert-snakeoil.pem/apache-selfsigned.crt/g' /etc/apache2/sites-available/default-ssl.conf
 sed -i 's/ssl-cert-snakeoil.key/apache-selfsigned.key/g' /etc/apache2/sites-available/default-ssl.conf
