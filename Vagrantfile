@@ -28,6 +28,10 @@ Vagrant.configure("2") do |config|
   # Setup a private network
   config.vm.network "private_network", ip: "192.168.56.101"
 
+  # Setup public network
+  # Uncomment this to enable public network access
+  config.vm.network "public_network"
+
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
