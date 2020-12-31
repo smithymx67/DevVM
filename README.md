@@ -19,6 +19,16 @@ Run `vagrant destroy` to delete
 
 ---
 
+## Hosts File
+
+Add the following to your hosts file
+
+```plaintext
+192.168.56.101 astroid
+```
+
+---
+
 ## Database
 
 The database has the following login details: `root:root`  
