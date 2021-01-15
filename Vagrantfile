@@ -20,7 +20,7 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder '.', '/vagrant', disabled: true
 
   # Create shared folder
-  config.vm.synced_folder "share", "/media/share", :owner => "vagrant", :group => "www-data", create: true, type: "virtualbox"
+  config.vm.synced_folder "share", "/media/share", :owner => "www-data", :group => "www-data", create: true, type: "virtualbox"
 
   # Install web things here
   config.vm.provision "shell", path: "setup.sh"
