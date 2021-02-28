@@ -45,14 +45,14 @@ echo "DELETE FROM mysql.user WHERE User='';" | mysql -uroot
 echo "DELETE FROM mysql.user WHERE User='root' AND Host NOT IN ('localhost', '127.0.0.1', '::1');" | mysql -uroot
 echo "FLUSH PRIVILEGES;" | mysql -uroot
 
-wget https://files.phpmyadmin.net/phpMyAdmin/5.0.2/phpMyAdmin-5.0.2-all-languages.zip
-unzip phpMyAdmin-5.0.2-all-languages.zip -d /var/www/html
-mv /var/www/html/phpMyAdmin-5.0.2-all-languages/ /var/www/html/phpMyAdmin
+wget https://files.phpmyadmin.net/phpMyAdmin/5.0.4/phpMyAdmin-5.0.4-all-languages.zip
+unzip phpMyAdmin-5.0.4-all-languages.zip -d /var/www/html
+mv /var/www/html/phpMyAdmin-5.0.4-all-languages/ /var/www/html/phpMyAdmin
 cp /media/share/config/config.inc.php /var/www/html/phpMyAdmin
 mkdir /var/www/html/phpMyAdmin/tmp
 chmod 775 /var/www/html/phpMyAdmin/tmp/
 chown -R root:www-data /var/www/html
-rm phpMyAdmin-5.0.2-all-languages.zip
+rm phpMyAdmin-5.0.4-all-languages.zip
 rm /var/www/html/index.html
 
 fallocate -l 1G /swapfile
