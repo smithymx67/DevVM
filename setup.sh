@@ -6,7 +6,7 @@ apt-get install apache2 -y
 apt-get install php libapache2-mod-php php-mysql php-cli php-mbstring php-bz2 php-zip php-xdebug php-curl php-xml php-dom php-simplexml php-gd -y
 apt-get install mariadb-server -y
 
-curl -sL https://deb.nodesource.com/setup_12.x | bash -
+curl -sL https://deb.nodesource.com/setup_14.x | bash -
 apt-get install -y nodejs
 
 curl -sS https://getcomposer.org/installer -o composer-setup.php
@@ -45,14 +45,14 @@ echo "DELETE FROM mysql.user WHERE User='';" | mysql -uroot
 echo "DELETE FROM mysql.user WHERE User='root' AND Host NOT IN ('localhost', '127.0.0.1', '::1');" | mysql -uroot
 echo "FLUSH PRIVILEGES;" | mysql -uroot
 
-wget https://files.phpmyadmin.net/phpMyAdmin/5.0.4/phpMyAdmin-5.0.4-all-languages.zip
-unzip phpMyAdmin-5.0.4-all-languages.zip -d /var/www/html
-mv /var/www/html/phpMyAdmin-5.0.4-all-languages/ /var/www/html/phpMyAdmin
+wget https://files.phpmyadmin.net/phpMyAdmin/5.1.0/phpMyAdmin-5.1.0-all-languages.zip
+unzip phpMyAdmin-5.1.0-all-languages.zip -d /var/www/html
+mv /var/www/html/phpMyAdmin-5.1.0-all-languages/ /var/www/html/phpMyAdmin
 cp /media/share/config/config.inc.php /var/www/html/phpMyAdmin
 mkdir /var/www/html/phpMyAdmin/tmp
 chmod 775 /var/www/html/phpMyAdmin/tmp/
 chown -R root:www-data /var/www/html
-rm phpMyAdmin-5.0.4-all-languages.zip
+rm phpMyAdmin-5.1.0-all-languages.zip
 rm /var/www/html/index.html
 
 fallocate -l 1G /swapfile
