@@ -30,7 +30,7 @@ Vagrant.configure("2") do |config|
 
   # Setup public network
   # Uncomment this to enable public network access
-  config.vm.network "public_network"
+  #config.vm.network "public_network"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
